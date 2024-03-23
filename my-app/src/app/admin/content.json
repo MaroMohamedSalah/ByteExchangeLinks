@@ -27,8 +27,36 @@
 	],
 	"mcq": [
 		{
-			"name": "Question 1?",
-			"link": "Option 1"
+			"name": "SE-1",
+			"link": "https://t.me/+HgkgwRPYhuE0YmFk"
+		},
+		{
+			"name": "SE-2",
+			"link": "https://t.me/+tPcd7IC-UvZmNGU0"
+		},
+		{
+			"name": "SA-1",
+			"link": "https://t.me/+l2VnN_O9LJw0YWVk"
+		},
+		{
+			"name": "SA-2",
+			"link": "https://t.me/+ptNBcPgLpM5kYjNk"
+		},
+		{
+			"name": "AI",
+			"link": "https://t.me/+GhzDALXjW1ljNDNk"
+		},
+		{
+			"name": "OS-2",
+			"link": "https://t.me/+gHAPq5SU97NmMDVk"
+		},
+		{
+			"name": "Ethics",
+			"link": "https://t.me/+bAgXIHxgXVAxZjI0"
+		},
+		{
+			"name": "Graphics",
+			"link": "https://t.me/+ns6dHFlmlLU1ODI8"
 		}
 	],
 	"PDFs": [{ "name": "", "link": "" }]
