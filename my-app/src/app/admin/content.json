@@ -1,5 +1,5 @@
 {
-	"youtube_channel": "https://www.youtube.com/channel/UCm-nD8cMPm6qc6c-Y5NxBhA",
+	"Youtube Channel": "https://www.youtube.com/channel/UCm-nD8cMPm6qc6c-Y5NxBhA",
 	"groups": [
 		{
 			"name": "ByteExchange Groups",
@@ -25,7 +25,7 @@
 			"link": ""
 		}
 	],
-	"mcqs": [
+	"mcq": [
 		{
 			"name": "Question 1?",
 			"link": "Option 1"
