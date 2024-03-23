@@ -1,0 +1,35 @@
+{
+	"youtube_channel": "https://www.youtube.com/channel/UCm-nD8cMPm6qc6c-Y5NxBhA",
+	"groups": [
+		{
+			"name": "ByteExchange Groups",
+			"links": [
+				{
+					"name": "Part 1",
+					"url": "https://www.link1.com"
+				},
+				{
+					"name": "Part 2",
+					"url": "https://www.link2.com"
+				},
+				{
+					"name": "Opened Chat",
+					"url": "https://www.link2.com"
+				}
+			]
+		}
+	],
+	"courses": [
+		{
+			"name": "Course 1",
+			"link": ""
+		}
+	],
+	"mcqs": [
+		{
+			"name": "Question 1?",
+			"link": "Option 1"
+		}
+	],
+	"PDFs": [{ "name": "", "link": "" }]
+}
