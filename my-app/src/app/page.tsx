@@ -6,9 +6,9 @@ import Link from "next/link";
 import { CONTENT_ENTRIES } from "./admin/constants";
 export default function Home() {
 	return (
-		<main className="App flex min-h-screen">
+		<main className="App">
 			<div className="container">
-				<div className="optionsContainer">
+				<div className="optionsContainer d-flex min-vh-100 align-items-center">
 					<div className="row">
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
