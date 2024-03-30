@@ -1,0 +1,14 @@
+.Courses button {
+	background: transparent !important;
+}
+.Courses .css-46bh2p-MuiCardContent-root p {
+	height: 70px;
+	overflow-y: auto;
+}
+.Courses .CourseCard {
+	transition: all ease-in-out 0.5s;
+	cursor: pointer;
+}
+.Courses .CourseCard:hover {
+	scale: 1.1;
+}

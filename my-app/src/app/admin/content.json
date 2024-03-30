@@ -6,25 +6,20 @@
 			"links": [
 				{
 					"name": "Part 1",
-					"url": "https://www.link1.com"
+					"url": "https://chat.whatsapp.com/JVnqxYapQgPFLnxAeboawL"
 				},
 				{
 					"name": "Part 2",
-					"url": "https://www.link2.com"
+					"url": "https://chat.whatsapp.com/HhcXjQNEZgV1ibcExgVOiG"
 				},
 				{
 					"name": "Opened Chat",
-					"url": "https://www.link2.com"
+					"url": "https://chat.whatsapp.com/KV3YUnziqZb6HMQhNXCbZc"
 				}
 			]
 		}
 	],
-	"courses": [
-		{
-			"name": "Course 1",
-			"link": ""
-		}
-	],
+	"courses": [],
 	"mcq": [
 		{
 			"name": "SE-1",
