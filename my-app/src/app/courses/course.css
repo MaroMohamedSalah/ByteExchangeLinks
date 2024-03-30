@@ -1,7 +1,7 @@
 .Courses button {
 	background: transparent !important;
 }
-.Courses .css-46bh2p-MuiCardContent-root p {
+.Courses .MuiCardContent-root p {
 	height: 70px;
 	overflow-y: auto;
 }
