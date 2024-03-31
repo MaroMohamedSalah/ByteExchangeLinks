@@ -1,16 +1,13 @@
-"use client";
 import Link from "next/link";
-import { Button } from "@mui/material";
 import content from "../admin/content.json";
-import { useEffect } from "react";
-
-const Mcq = () => {
+import { Button } from "@mui/material";
+const Pdfs = () => {
 	return (
-		<div className="Mcq">
+		<div className="Pdfs">
 			<div className="container">
 				<div className="optionsContainer">
 					<div className="row w-100">
-						{content.mcq.map((item, index) => {
+						{content.pdfs.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
 									<Link href={`${item.link}`} passHref target="_blank">
@@ -28,4 +25,4 @@ const Mcq = () => {
 	);
 };
 
-export default Mcq;
+export default Pdfs;

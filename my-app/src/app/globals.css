@@ -18,3 +18,9 @@ button,
 a {
 	text-decoration: none !important;
 }
+.optionsContainer {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

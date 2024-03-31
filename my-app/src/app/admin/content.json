@@ -54,5 +54,26 @@
 			"link": "https://t.me/+ns6dHFlmlLU1ODI8"
 		}
 	],
-	"PDFs": [{ "name": "", "link": "" }]
+	"pdfs": [
+		{
+			"name": "SE-1 Drive",
+			"link": "https://drive.google.com/drive/folders/16dB_ZLa3eP0bFjp6oRQIIb-SkJTEFCly?usp=drive_link"
+		},
+		{
+			"name": "SE-2 Drive",
+			"link": "https://drive.google.com/drive/folders/13j7YvDluGFOxs-WspNCpBnNo2aE0YlFb?usp=drive_link"
+		},
+		{
+			"name": "SA-1 Drive",
+			"link": "https://drive.google.com/drive/folders/17f-Y3qFMO-tHi3Y7-78C5NnrU_WOK2Cy?usp=drive_link"
+		},
+		{
+			"name": "SA-2 Drive",
+			"link": "https://drive.google.com/drive/folders/1tdxxfkhn6LzKIF86pYTWh2LzTnOzLYAe?usp=drive_link"
+		},
+		{
+			"name": "AI Drive",
+			"link": "https://drive.google.com/drive/folders/1aiBeFhpmFmzdTQPzxKx6ZiRyPfo7-xY2?usp=drive_link"
+		}
+	]
 }
