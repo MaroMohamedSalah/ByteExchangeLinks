@@ -24,3 +24,21 @@ a {
 	justify-content: center;
 	align-items: center;
 }
+
+.signature {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	background-color: var(--bg);
+	font-size: 0.75rem;
+}
+.signature span {
+	font-family: "Dawning of a New Day", cursive;
+	font-size: 1.2rem;
+}

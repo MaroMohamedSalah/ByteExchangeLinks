@@ -35,8 +35,20 @@ export default function RootLayout({
 					}}
 				/>
 				{/* End Google Analytics */}
+
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap"
+					rel="stylesheet"
+				/>
 			</head>
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				{children}
+				<h6 className="signature m-0 py-2">
+					Created With ❤️ by <span className="ms-2">Marwan</span>
+				</h6>
+			</body>
 		</html>
 	);
 }
