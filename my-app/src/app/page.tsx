@@ -8,8 +8,8 @@ export default function Home() {
 	return (
 		<main className="App">
 			<div className="container">
-				<div className="optionsContainer d-flex min-vh-100 align-items-center">
-					<div className="row">
+				<div className="optionsContainer min-vh-100 d-flex align-items-center justify-content-center">
+					<div className="row w-100">
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
