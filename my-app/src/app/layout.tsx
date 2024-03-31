@@ -37,7 +37,7 @@ export default function RootLayout({
 				{/* End Google Analytics */}
 
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
-				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link rel="preconnect" href="https://fonts.gstatic.com" />
 				<link
 					href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap"
 					rel="stylesheet"
