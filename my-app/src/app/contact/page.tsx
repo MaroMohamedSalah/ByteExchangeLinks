@@ -1,14 +1,14 @@
-import Link from "next/link";
 import { Button } from "@mui/material";
+import Link from "next/link";
 import content from "../admin/content.json";
 
-const Mcq = () => {
+const Contact = () => {
 	return (
-		<div className="Mcq">
+		<div className="Contact">
 			<div className="container">
 				<div className="optionsContainer">
 					<div className="row w-100">
-						{content.mcq.map((item, index) => {
+						{content.contact.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
 									<Link href={`${item.link}`} passHref target="_blank">
@@ -26,4 +26,4 @@ const Mcq = () => {
 	);
 };
 
-export default Mcq;
+export default Contact;

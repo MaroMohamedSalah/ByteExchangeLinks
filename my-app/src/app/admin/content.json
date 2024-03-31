@@ -75,5 +75,27 @@
 			"name": "AI Drive",
 			"link": "https://drive.google.com/drive/folders/1aiBeFhpmFmzdTQPzxKx6ZiRyPfo7-xY2?usp=drive_link"
 		}
+	],
+	"contact": [
+		{
+			"name": "Facebook",
+			"link": "https://www.facebook.com/profile.php?id=100009187233222"
+		},
+		{
+			"name": "Instagram",
+			"link": "https://www.instagram.com/maro_salah1"
+		},
+		{
+			"name": "Linkedin",
+			"link": "https://www.linkedin.com/in/marwanmohamedsalah/"
+		},
+		{
+			"name": "Gmail",
+			"link": "mailto: marwanmo143@gmail.com"
+		},
+		{
+			"name": "What's APP",
+			"link": "https://wa.me/201102654851"
+		}
 	]
 }
