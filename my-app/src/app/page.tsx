@@ -13,7 +13,11 @@ export default function Home() {
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
-									<Link href={`/${item[0]}`}>
+									<Link
+										href={
+											typeof item[1] === "string" ? `${item[1]}` : `/${item[0]}`
+										}
+									>
 										<Button className="py-3" variant="contained" fullWidth>
 											{item[0]}
 										</Button>
