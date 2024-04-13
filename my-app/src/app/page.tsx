@@ -19,7 +19,8 @@ export default function Home() {
 			})
 			.then((data) => {
 				const gistInfo = data;
-				localStorage.setItem("gistInfo", JSON.stringify(gistInfo));
+				typeof window !== "undefined" &&
+					localStorage.setItem("gistInfo", JSON.stringify(gistInfo));
 				// Do something with the fetched data, such as updating state
 			})
 			.catch((error) => {
@@ -37,7 +38,8 @@ export default function Home() {
 			})
 			.then((data) => {
 				const content = data;
-				localStorage.setItem("content", JSON.stringify(content));
+				typeof window !== "undefined" &&
+					localStorage.setItem("content", JSON.stringify(content));
 				// Do something with the fetched data, such as updating state
 			})
 			.catch((error) => {
