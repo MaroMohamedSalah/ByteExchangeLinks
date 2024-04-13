@@ -19,7 +19,7 @@ export const LAST_UPDATE = formatDateAndTime({
 });
 
 export const CONTENT_DATA_FETCH_URL =
-	PARSED_GIST_INFO_FROM_LOCAL_STORAGE.files["byteExchange-Links-Content"]
+	PARSED_GIST_INFO_FROM_LOCAL_STORAGE?.files["byteExchange-Links-Content"]
 		.raw_url;
 
 export const CONTENT =
