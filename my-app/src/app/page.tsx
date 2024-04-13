@@ -1,12 +1,9 @@
 "use client";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-import {
-	CONTENT_DATA_FETCH_URL,
-	CONTENT_ENTRIES,
-	LAST_UPDATE,
-} from "./admin/constants";
+import { CONTENT_DATA_FETCH_URL, CONTENT_ENTRIES } from "./admin/constants";
 import { useEffect } from "react";
+import LastUpdate from "./components/LastUpdate";
 
 export default function Home() {
 	useEffect(() => {
@@ -51,9 +48,7 @@ export default function Home() {
 		<main className="App">
 			<div className="container">
 				<div className="optionsContainer">
-					<h6 className="lastUpdate position-fixed top-0 w-100 text-center py-5">
-						Last Update @ {LAST_UPDATE}
-					</h6>
+					{/* <LastUpdate /> */}
 					<div className="row w-100">
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
