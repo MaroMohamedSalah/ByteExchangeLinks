@@ -16,3 +16,11 @@ export const PARSED_GIST_INFO_FROM_LOCAL_STORAGE =
 export const LAST_UPDATE = formatDateAndTime({
 	isoDateString: PARSED_GIST_INFO_FROM_LOCAL_STORAGE.updated_at,
 });
+
+export const CONTENT_DATA_FETCH_URL =
+	PARSED_GIST_INFO_FROM_LOCAL_STORAGE.files["byteExchange-Links-Content"]
+		.raw_url;
+
+export const CONTENT = localStorage.getItem("content");
+
+export const PARSED_CONTENT = CONTENT && JSON.parse(CONTENT);

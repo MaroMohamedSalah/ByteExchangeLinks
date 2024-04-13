@@ -2,12 +2,11 @@
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import {
+	CONTENT_DATA_FETCH_URL,
 	CONTENT_ENTRIES,
 	LAST_UPDATE,
-	PARSED_GIST_INFO_FROM_LOCAL_STORAGE,
 } from "./admin/constants";
 import { useEffect } from "react";
-import { formatDateAndTime } from "./services/General";
 
 export default function Home() {
 	useEffect(() => {
@@ -27,13 +26,32 @@ export default function Home() {
 				console.error("There was a problem fetching data:", error);
 			});
 	}, []);
+
+	useEffect(() => {
+		fetch(CONTENT_DATA_FETCH_URL)
+			.then((res) => {
+				if (!res.ok) {
+					throw new Error("Network response was not ok");
+				}
+				return res.json();
+			})
+			.then((data) => {
+				const content = data;
+				localStorage.setItem("content", JSON.stringify(content));
+				// Do something with the fetched data, such as updating state
+			})
+			.catch((error) => {
+				console.error("There was a problem fetching data:", error);
+			});
+	}, []);
+
 	return (
 		<main className="App">
 			<div className="container">
-				<h6 className="lastUpdate position-fixed top-0 w-100 text-center py-5">
-					Last Update @ {LAST_UPDATE}
-				</h6>
 				<div className="optionsContainer">
+					<h6 className="lastUpdate position-fixed top-0 w-100 text-center py-5">
+						Last Update @ {LAST_UPDATE}
+					</h6>
 					<div className="row w-100">
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
