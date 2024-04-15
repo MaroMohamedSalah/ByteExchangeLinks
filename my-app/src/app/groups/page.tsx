@@ -1,13 +1,11 @@
 "use client";
 import Link from "next/link";
-import Content from "../admin/content.json";
 import StarBorder from "@mui/icons-material/StarBorder";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import GroupsIcon from "@mui/icons-material/Groups";
 import ChatIcon from "@mui/icons-material/Chat";
 import {
-	Button,
 	Collapse,
 	List,
 	ListItemButton,
@@ -15,12 +13,22 @@ import {
 	ListItemText,
 	ListSubheader,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Groups = () => {
 	const [open, setOpen] = useState(true);
+	const [content, setContent] = useState({ groups: [] });
+
 	const handleClick = () => {
 		setOpen(!open);
 	};
+
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			const contentFromLocalStorage = localStorage.getItem("content");
+			contentFromLocalStorage &&
+				setContent(JSON.parse(contentFromLocalStorage));
+		}
+	}, []);
 	return (
 		<div className="Groups">
 			<div className="container">
@@ -38,7 +46,7 @@ const Groups = () => {
 							</ListSubheader>
 						}
 					>
-						{Content.groups.map((item, index) => {
+						{content.groups.map((item: any, index: number) => {
 							return (
 								<div key={index} className="py-3">
 									<ListItemButton onClick={handleClick}>
@@ -50,7 +58,7 @@ const Groups = () => {
 									</ListItemButton>
 									<Collapse in={open} timeout="auto" unmountOnExit>
 										<List component="div" disablePadding>
-											{item.links.map((item, index) => {
+											{item.links.map((item: any, index: number) => {
 												return (
 													<Link
 														href={`${item.url}`}
