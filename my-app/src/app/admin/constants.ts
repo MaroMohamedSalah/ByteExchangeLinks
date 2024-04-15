@@ -1,3 +1,4 @@
+"use client";
 import { formatDateAndTime } from "../services/General";
 import content from "./content.json";
 export const CONTENT_ENTRIES = Object.entries(content);
@@ -19,7 +20,7 @@ export const CONTENT_DATA_FETCH_URL =
 	PARSED_GIST_INFO_FROM_LOCAL_STORAGE.files["byteExchange-Links-Content"]
 		.raw_url;
 
-export const CONTENT =
-	typeof window !== "undefined" ? localStorage.getItem("content") : null;
+// export const CONTENT =
+// 	typeof window !== "undefined" ? localStorage.getItem("content") : null;
 
-export const PARSED_CONTENT = CONTENT && JSON.parse(CONTENT);
+// export const PARSED_CONTENT = CONTENT && JSON.parse(CONTENT);
