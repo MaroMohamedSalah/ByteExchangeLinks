@@ -8,7 +8,7 @@ const Mcq = () => {
 			<div className="container">
 				<div className="optionsContainer">
 					<div className="row w-100">
-						{PARSED_CONTENT.mcq?.map((item: any, index: number) => {
+						{PARSED_CONTENT.mcq.map((item: any, index: number) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
 									<Link href={`${item.link}`} passHref target="_blank">
