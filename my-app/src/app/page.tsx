@@ -2,10 +2,11 @@
 import Button from "@mui/material/Button";
 import Link from "next/link";
 import { CONTENT_DATA_FETCH_URL, CONTENT_ENTRIES } from "./admin/constants";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import LastUpdate from "./components/LastUpdate";
 
 export default function Home() {
+	const [content, setContent] = useState([]);
 	useEffect(() => {
 		fetch("https://api.github.com/gists/f744fa779ab3f83f28f9f4bf36ee7acc")
 			.then((res) => {
@@ -44,13 +45,21 @@ export default function Home() {
 			});
 	}, []);
 
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			const contentFromLocalStorage = localStorage.getItem("content");
+			contentFromLocalStorage &&
+				setContent(JSON.parse(contentFromLocalStorage));
+		}
+	}, []);
+
 	return (
 		<main className="App">
 			<div className="container">
 				<div className="optionsContainer">
 					<LastUpdate />
 					<div className="row w-100">
-						{CONTENT_ENTRIES.map((item, index) => {
+						{content.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
 									<Link
