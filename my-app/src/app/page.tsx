@@ -48,7 +48,7 @@ export default function Home() {
 		<main className="App">
 			<div className="container">
 				<div className="optionsContainer">
-					{/* <LastUpdate /> */}
+					<LastUpdate />
 					<div className="row w-100">
 						{CONTENT_ENTRIES.map((item, index) => {
 							return (
