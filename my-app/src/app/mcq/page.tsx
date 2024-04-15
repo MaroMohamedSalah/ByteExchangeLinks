@@ -11,7 +11,7 @@ const Mcq = () => {
 			contentFromLocalStorage &&
 				setContent(JSON.parse(contentFromLocalStorage));
 		}
-	}, [content]);
+	}, []);
 	return (
 		<div className="Mcq">
 			<div className="container">

@@ -13,7 +13,7 @@ const LastUpdate = () => {
 			gistInfoFromLocalStorage &&
 				setGistInfo(JSON.parse(gistInfoFromLocalStorage));
 		}
-	}, [gistInfo]);
+	}, []);
 
 	return (
 		<h6 className="LastUpdate position-fixed top-0 text-center py-5 d-flex align-items-center">
