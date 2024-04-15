@@ -1,7 +1,6 @@
 "use client";
 import { formatDateAndTime } from "../services/General";
 import content from "./content.json";
-export const CONTENT_ENTRIES = Object.entries(content);
 
 export const YOUTUBE_CHANNEL_ID = "UCm-nD8cMPm6qc6c-Y5NxBhA";
 

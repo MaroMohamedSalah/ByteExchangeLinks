@@ -1,12 +1,13 @@
 "use client";
 import Button from "@mui/material/Button";
 import Link from "next/link";
-import { CONTENT_DATA_FETCH_URL, CONTENT_ENTRIES } from "./admin/constants";
+import { CONTENT_DATA_FETCH_URL } from "./admin/constants";
 import { useEffect, useState } from "react";
 import LastUpdate from "./components/LastUpdate";
 
 export default function Home() {
 	const [content, setContent] = useState([]);
+	const CONTENT_ENTRIES = Object.entries(content);
 	useEffect(() => {
 		fetch("https://api.github.com/gists/f744fa779ab3f83f28f9f4bf36ee7acc")
 			.then((res) => {
@@ -38,7 +39,6 @@ export default function Home() {
 				const content = data;
 				typeof window !== "undefined" &&
 					localStorage.setItem("content", JSON.stringify(content));
-				// Do something with the fetched data, such as updating state
 			})
 			.catch((error) => {
 				console.error("There was a problem fetching data:", error);
@@ -59,7 +59,7 @@ export default function Home() {
 				<div className="optionsContainer">
 					<LastUpdate />
 					<div className="row w-100">
-						{content.map((item, index) => {
+						{CONTENT_ENTRIES.map((item, index) => {
 							return (
 								<div key={index} className="col-12 col-md-6 py-3">
 									<Link
