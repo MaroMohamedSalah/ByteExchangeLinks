@@ -1,7 +1,4 @@
 "use client";
-import { formatDateAndTime } from "../services/General";
-import content from "./content.json";
-
 export const YOUTUBE_CHANNEL_ID = "UCm-nD8cMPm6qc6c-Y5NxBhA";
 
 export const YOUTUBE_API_KEY = "AIzaSyCiAdtP8C0uhgZk-epotWEiiHpr7M_F0uY";
@@ -18,8 +15,3 @@ export const CONTENT_DATA_FETCH_URL =
 	PARSED_GIST_INFO_FROM_LOCAL_STORAGE &&
 	PARSED_GIST_INFO_FROM_LOCAL_STORAGE.files["byteExchange-Links-Content"]
 		.raw_url;
-
-// export const CONTENT =
-// 	typeof window !== "undefined" ? localStorage.getItem("content") : null;
-
-// export const PARSED_CONTENT = CONTENT && JSON.parse(CONTENT);
