@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import Link from "next/link";
-import "./DynamicLinksContainer.css";
+import "./dynamicLinksContainer.css";
 
 interface DynamicLinksContainerProps {
 	content: { key: string; link: string; name: string }[];
