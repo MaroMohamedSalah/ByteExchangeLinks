@@ -21,4 +21,4 @@ ByteExchange Links is a dynamic Next.js web application designed to organize and
 
 ## Authors
 
-- [Your Name](https://github.com/MaroMohamedSalah)
+- [Marwan Mohamed](https://github.com/MaroMohamedSalah)
